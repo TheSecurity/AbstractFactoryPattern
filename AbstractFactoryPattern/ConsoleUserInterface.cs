@@ -23,13 +23,13 @@ namespace AbstractFactoryPattern
         public void LoadConfig()
         {
             var config = _configReader.GetConfig();
-            Console.WriteLine(config);
+            Console.WriteLine("Loading config:" + config);
         }
 
         public void LoadData()
         {
             var data = _dataReader.GetData();
-            Console.WriteLine(data);
+            Console.WriteLine("Loading data:" + data);
         }
     }
 }
